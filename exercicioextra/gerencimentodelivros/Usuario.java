@@ -12,7 +12,7 @@ public class Usuario {
     public void emprestar_livro(Livro livro) {
         if (livro.esta_disponivel()) {
             livro.setDisponivel(false);
-            System.out.println(nome + " emprestou o livro: " + livro.getTitulo());
+            System.out.println("O usuário de código " + idUsuario  + " emprestou o livro: " + livro.getTitulo());
         } else {
             System.out.println("O livro " + livro.getTitulo() + " não está disponível para empréstimo.");
         }
@@ -20,6 +20,6 @@ public class Usuario {
 
     public void devolver_livro(Livro livro) {
         livro.setDisponivel(true);
-        System.out.println(nome + " devolveu o livro: " + livro.getTitulo());
+        System.out.println("O usuário de código " + idUsuario  + " devolveu o livro: " + livro.getTitulo());
     }
 }
