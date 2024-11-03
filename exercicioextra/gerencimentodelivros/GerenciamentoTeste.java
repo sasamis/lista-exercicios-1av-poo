@@ -23,8 +23,7 @@ public class GerenciamentoTeste {
         biblioteca.listar_livros_disponiveis();
 
         biblioteca.buscar_livro_por_titulo("O Pequeno Príncipe");
-
-
+        biblioteca.buscar_livro_por_titulo("Anne of Green Gables");
 
     }
 }
